@@ -14,7 +14,7 @@ public class Pedido {
     @Column(nullable = false)
     private Date data;
 
-    @OneToMany(mappedBy = "pedido")
+    @OneToMany(mappedBy = "pedido", fetch = FetchType.LAZY) // valor default de fetch (...ToMany -> Lazy
     private List<ItemPedido> itens;
 
     public Pedido() {

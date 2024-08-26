@@ -16,5 +16,6 @@ public class ObterPedido {
         }
 
         dao.fechar();
+
     }
 }
